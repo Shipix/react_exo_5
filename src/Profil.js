@@ -1,13 +1,18 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react';
 
-export default class Profil extends Component {
-    render() {
-        return (
+class Profil extends Component{
+
+
+    render(){
+        return(
+    
             <div>
-                <h1>Prénom : Nicolas</h1>
-                <h2>Nom : Primo</h2>
-                <p>Description : Un jeune et beau coach puissant(aimez vous guys)</p>
+                <h1>Nom: {this.props.nom} </h1>
+                <h2>Prenom: {this.props.prenom}</h2>
+                <p>Description: </p>
             </div>
         )
     }
-}
+    }
+
+export default Profil;
